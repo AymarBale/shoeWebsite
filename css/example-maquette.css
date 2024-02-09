@@ -1,0 +1,558 @@
+/**
+    Déclaration global a toute l'application
+    Cette partie est modifié SEULEMENT APRES avoir communiquer avec les autre membre de l'équipe.
+    --------------------------------------------------------------------------------------------
+**/
+
+/** Chargement des polices **/
+
+/** Déclaration du box-sizing **/
+
+/** Sémantique permettant un aspect constant sur toute l'application **/
+
+header {}
+
+nav {
+    background-color: #decdf5;
+    width: 100%;
+    height: 50px;
+    color: black;
+    background-color: black;
+    display: inline-block;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+aside {}
+
+main {}
+
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 5px;
+    font-family: cursive;
+}
+
+footer>span>a {
+    text-decoration: none;
+    color: #656176;
+    vertical-align: bottom;
+}
+
+footer>span>img {
+    margin-top: 3px;
+    margin-left: 5px;
+    width: 20px;
+}
+
+footer>span+span {}
+
+@font-face {
+    font-family: lobfont;
+    src: url(lob.ttf);
+}
+
+/**
+    Déclaration spécifique a chaque page au besoin.
+    Chaque personne travaille sur une page à la fois donc il ne devrait jamais y avoir de conflit.
+
+    2 examples: home et contact
+    --------------------------------------------------------------------------------------------
+**/
+
+/** Example pour les cas spécifiques de la page home **/
+.home {
+    position: relative;
+    background-color: #f8f1ff;
+}
+
+header {
+    display: inline-block;
+}
+
+header>img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.brand_text {
+    background-color: black;
+    color: white;
+    width: 90%;
+    margin: auto;
+    font-family: monospace;
+}
+
+.home main .carousel>div>div {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 320px;
+    text-align: center;
+    background: no-repeat url(../image/img_back2.jpg), #decdf5;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
+
+nav>ul {
+    list-style-type: none;
+    margin-left: 80px;
+    text-align: end;
+}
+
+nav>ul>li {
+    border: 1px solid #656176;
+    display: inline-block;
+    margin-top: 1px;
+    margin-right: 6%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+nav>ul>li>a {
+    padding-right: 40px;
+    text-decoration: none;
+    color: white;
+    font-family: monospace;
+    margin-left: 0px;
+    padding-left: 4px;
+}
+
+nav>ul>li>a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding-left: 14px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+
+}
+
+.home h2, .home h1 {
+    display: inline-block;
+    font-family: lobfont;
+    border: 1px dashed black;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.home>header+nav>ul>li:first-child>a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding-left: 14px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+}
+
+.home h1 {}
+
+.home aside {}
+
+.home main {}
+
+.home main .carousel {
+    /** Spécifique pour l'intégration du carousel de la page home **/
+    /*border: 2px solid red;*/
+    text-align: center;
+}
+
+footer>span {
+    margin-left: 200px;
+}
+
+/** Example pour les cas spécifiques de la page contact **/
+
+
+.contact header {}
+
+.contact nav {}
+
+.contact aside {}
+
+.contact main {}
+
+.contact main form {
+    margin: auto;
+    height: 200px;
+}
+
+.contact>header+nav>ul>li:nth-child(4)>a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding-left: 14px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+}
+
+.contact {
+    background: linear-gradient(#decdf5, #f8f1ff);
+}
+
+.contact>main>form>fieldset {
+    background-color: lightgray;
+    width: 700px;
+    margin: auto;
+}
+
+.contact>main>form>fieldset+div {
+    text-align: center;
+    margin: auto;
+    margin-top: 1%;
+}
+
+.contact>main>form>fieldset>legend+div {
+    position: relative;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+}
+
+.contact>main>form>fieldset>legend+div>div, .contact>main>form>fieldset>div>div+div {
+    text-align: right;
+    margin-right: 350px;
+    margin-top: 30px;
+
+}
+
+.contact>main>form>fieldset+div>div>input {
+    background-color: gray;
+    color: white;
+    border: white;
+    padding: 5px;
+}
+
+.contact>main>form>fieldset>div>div>label {
+    font-family: monospace;
+}
+
+.contact>main>form>fieldset>legend+div>div>img {
+    width: 100px;
+    height: 100px;
+}
+
+.sub_button>input {
+    background-color: #1b998b;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 1px solid black;
+    font-family: lobfont;
+}
+
+#description+div>img {
+    width: 300px;
+    height: 300px;
+}
+
+#description>label {
+    vertical-align: top;
+}
+
+.contact>main>form>fieldset>legend+div>div:last-of-type {
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    left: 350px;
+}
+
+.contact>main>form>h1 {
+    font-family: lobfont;
+    margin-left: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact footer>span>a+img+a+img+a+img {
+    width: 40px;
+    border: 1px solid white;
+}
+
+.contact footer {}
+
+/** Example pour les cas spécifiques de la page Catalogue **/
+
+.catalogue header {}
+
+.catalogue nav {}
+
+.catalogue div.container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.catalogue aside {
+    position: absolute;
+    left: -130px;
+    top: 250px;
+}
+
+.catalogue aside>ul {
+    position: absolute;
+    list-style-type: none;
+    left: 0px;
+}
+
+.catalogue aside>ul>li {
+    border: 0px solid #656176;
+    background-color: #f8f1ff;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.catalogue aside>ul>li:hover, .catalogue aside>ul>li:hover>a {
+    background-color: #decdf5;
+    color: black;
+}
+
+.catalogue main .produit {
+    position: relative;
+    height: 370px;
+    border: 3px solid black;
+    text-align: center;
+    overflow-y: scroll;
+    margin: 20px 10px;
+}
+
+.catalogue main .produit .homme>div, .catalogue main .produit .femme>div, .catalogue main .produit .enfant>div {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 250px;
+    margin: 7px 10px;
+    background-color: #f8f1ff;
+}
+
+.catalogue main .produit .homme div>a>img, .catalogue main .produit .femme div>a>img, .catalogue main .produit .enfant div>a>img {
+    height: 190px;
+    width: 90%;
+}
+
+.catalogue div>ul {
+    list-style-type: none;
+}
+
+.catalogue a+div {
+    border: 1px solid #656176;
+    background-color: white;
+    text-align: left;
+}
+
+.catalogue div>a:last-of-type {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+}
+
+.catalogue>header+nav>ul>li:nth-child(2)>a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding-left: 14px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+}
+
+.produit .homme>div:hover, .produit .femme>div:hover, .produit .enfant>div:hover, .catalogue main div>div:hover>a:last-of-type {
+    display: block;
+    border: 1px solid black;
+
+}
+
+.catalogue h2 {
+    text-align: center;
+    font-family: lobfont;
+}
+
+.catalogue footer {}
+
+/** Example pour les cas spécifiques de la page Gallery **/
+
+.gallery header {}
+
+.gallery nav {}
+
+.gallery aside {
+    text-align: center;
+}
+
+.gallery aside>ul {
+    list-style-type: none;
+    left: 0px;
+}
+
+.gallery aside>ul>li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.gallery main {
+    position: relative;
+    height: 370px;
+    border: 3px solid black;
+    text-align: center;
+    overflow-y: scroll;
+    margin: 20px 10px;
+}
+
+.gallery main section .homme>div, .gallery main section .femme>div, .gallery main section .enfant>div {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 250px;
+    margin: 7px 10px;
+    background-color: #f8f1ff;
+}
+
+.gallery main section .homme div>a>img, .gallery main section .femme div>a>img, .gallery main section .enfant div>a>img {
+    height: 190px;
+    width: 90%;
+}
+
+.gallery a+div {
+    border: 1px solid #656176;
+    background-color: white;
+    text-align: left;
+}
+
+.gallery div>a:last-of-type {
+    display: none;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background-color: black;
+    color: white;
+}
+
+section .homme>div:hover, section .femme>div:hover, .gallery main div>div:hover>a:last-of-type {
+    display: block;
+    border: 1px solid black;
+}
+
+.gallery footer {}
+
+/** Example pour les cas spécifiques de la page detail **/
+
+.detail header {}
+
+.detail nav {}
+
+.detail aside {}
+
+.detail main {
+    position: relative;
+    text-align: center;
+    height: 400px;
+    overflow-y: scroll;
+    margin: 30px 10px;
+}
+
+.detail div.gallery, .detail .produit-detail>ul>li {
+    border: 1px solid black;
+}
+
+.detail div.gallery, .detail div.produit-detail {
+    display: inline-block;
+    position: relative;
+    margin: 15px 10px;
+}
+
+.detail div.gallery {
+    box-sizing: border-box;
+    background-color: #656176;
+    width: 300px;
+    height: 350px;
+    padding-top: 50px;
+}
+
+.detail div.produit-detail {
+    width: 800px;
+}
+
+.detail div.gallery>img {
+    width: 70%;
+    height: 250px;
+}
+
+.detail .produit-detail>hr {
+    width: 80%;
+}
+
+.detail .produit-detail>ul {
+    list-style-type: none;
+}
+
+.detail .produit-detail>ul>li {
+    display: inline-block;
+    background-color: #f8f1ff;
+    width: 45px;
+    margin: 10px 10px;
+}
+
+
+/** Example pour les cas spécifiques de la page detail **/
+table, th, td {
+    border: 0px solid;
+}
+
+table {
+    margin: auto;
+    margin-top: 100px;
+    width: 90%;
+}
+
+.tableau>header+nav>ul>li:nth-child(3)>a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding-left: 14px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+}
+
+table>caption {
+    margin-bottom: 40px;
+    font-family: lobfont;
+    border: 1px dashed black;
+    font-size: 20px;
+}
+
+thead>tr>th {
+    background-color: black;
+    color: white;
+}
+
+tr {
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: #decdf5;
+}
+
+td {
+    padding: 10px;
+}
+
+thead {}
